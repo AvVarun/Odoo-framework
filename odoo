@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendor Self-Service Portal</title>
+    <style>
+        /* Add your custom CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Vendor Self-Service Portal</h2>
+
+        <!-- Forecast Viewing Functionality -->
+        <h3>Upcoming Demand Forecasts</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Product Name</th>
+                    <th>Expected Quantity</th>
+                    <th>Forecast Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Add dynamic data here -->
+                <tr>
+                    <td>Product A</td>
+                    <td>100</td>
+                    <td>2024-06-01</td>
+                </tr>
+                <tr>
+                    <td>Product B</td>
+                    <td>150</td>
+                    <td>2024-06-15</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <a href="#" class="button">Download Forecast Report</a>
+
+        <!-- Order Adjustment Request Submission -->
+        <h3>Adjustment Request Submission</h3>
+        <form action="#" method="post">
+            <label for="order_reference">Order Reference:</label><br>
+            <input type="text" id="order_reference" name="order_reference"><br><br>
+            <label for="adjustment_detail">Requested Adjustment:</label><br>
+            <input type="text" id="adjustment_detail" name="adjustment_detail"><br><br>
+            <label for="additional_comments">Additional Comments:</label><br>
+            <textarea id="additional_comments" name="additional_comments" rows="4" cols="50"></textarea><br><br>
+            <input type="submit" value="Submit Adjustment Request" class="button">
+        </form>
+    </div>
+</body>
+</html>
